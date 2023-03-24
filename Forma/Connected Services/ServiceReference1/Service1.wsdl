@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51795/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51795/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ReadFromFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadFromFile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ReadFromFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadFromFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WriteToFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteToFile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WriteToFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteToFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptRC4_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptRC4" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptRC4_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptRC4Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptTea_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptTea" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptTea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptTeaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptTea_InputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptTea" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptTea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptTeaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptCBC_InputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptCBC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptCBC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptCBCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptCBC_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptCBC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptCBC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptCBCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptBMP_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptBMP" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptBMP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptBMPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptBMP_InputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptBMP" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptBMP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptBMPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ProcessFileInParallel_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessFileInParallel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ProcessFileInParallel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessFileInParallelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptEnigma_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptEnigma" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptEnigma_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptEnigmaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CalculateCRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateCRC" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CalculateCRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateCRCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptEnigmaParallel_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptEnigmaParallel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptDecryptEnigmaParallel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptDecryptEnigmaParallelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptTeaParallel_InputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptTeaParallel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_EncryptTeaParallel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptTeaParallelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptTeaParallel_InputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptTeaParallel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DecryptTeaParallel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DecryptTeaParallelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ReadFromFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ReadFromFile" message="tns:IService1_ReadFromFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ReadFromFileResponse" message="tns:IService1_ReadFromFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteToFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WriteToFile" message="tns:IService1_WriteToFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WriteToFileResponse" message="tns:IService1_WriteToFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptRC4">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptDecryptRC4" message="tns:IService1_EncryptDecryptRC4_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptDecryptRC4Response" message="tns:IService1_EncryptDecryptRC4_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptTea" message="tns:IService1_EncryptTea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptTeaResponse" message="tns:IService1_EncryptTea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptTea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DecryptTea" message="tns:IService1_DecryptTea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DecryptTeaResponse" message="tns:IService1_DecryptTea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptCBC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DecryptCBC" message="tns:IService1_DecryptCBC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DecryptCBCResponse" message="tns:IService1_DecryptCBC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptCBC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptCBC" message="tns:IService1_EncryptCBC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptCBCResponse" message="tns:IService1_EncryptCBC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptBMP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptBMP" message="tns:IService1_EncryptBMP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptBMPResponse" message="tns:IService1_EncryptBMP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptBMP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DecryptBMP" message="tns:IService1_DecryptBMP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DecryptBMPResponse" message="tns:IService1_DecryptBMP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFileInParallel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ProcessFileInParallel" message="tns:IService1_ProcessFileInParallel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ProcessFileInParallelResponse" message="tns:IService1_ProcessFileInParallel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptEnigma">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptDecryptEnigma" message="tns:IService1_EncryptDecryptEnigma_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptDecryptEnigmaResponse" message="tns:IService1_EncryptDecryptEnigma_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateCRC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CalculateCRC" message="tns:IService1_CalculateCRC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CalculateCRCResponse" message="tns:IService1_CalculateCRC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptEnigmaParallel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptDecryptEnigmaParallel" message="tns:IService1_EncryptDecryptEnigmaParallel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptDecryptEnigmaParallelResponse" message="tns:IService1_EncryptDecryptEnigmaParallel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTeaParallel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/EncryptTeaParallel" message="tns:IService1_EncryptTeaParallel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/EncryptTeaParallelResponse" message="tns:IService1_EncryptTeaParallel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DecryptTeaParallel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DecryptTeaParallel" message="tns:IService1_DecryptTeaParallel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DecryptTeaParallelResponse" message="tns:IService1_DecryptTeaParallel_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadFromFile">
+      <soap:operation soapAction="http://tempuri.org/IService1/ReadFromFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteToFile">
+      <soap:operation soapAction="http://tempuri.org/IService1/WriteToFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptRC4">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptDecryptRC4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTea">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptTea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptTea">
+      <soap:operation soapAction="http://tempuri.org/IService1/DecryptTea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptCBC">
+      <soap:operation soapAction="http://tempuri.org/IService1/DecryptCBC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptCBC">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptCBC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptBMP">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptBMP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptBMP">
+      <soap:operation soapAction="http://tempuri.org/IService1/DecryptBMP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFileInParallel">
+      <soap:operation soapAction="http://tempuri.org/IService1/ProcessFileInParallel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptEnigma">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptDecryptEnigma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateCRC">
+      <soap:operation soapAction="http://tempuri.org/IService1/CalculateCRC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptDecryptEnigmaParallel">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptDecryptEnigmaParallel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EncryptTeaParallel">
+      <soap:operation soapAction="http://tempuri.org/IService1/EncryptTeaParallel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DecryptTeaParallel">
+      <soap:operation soapAction="http://tempuri.org/IService1/DecryptTeaParallel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:51795/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

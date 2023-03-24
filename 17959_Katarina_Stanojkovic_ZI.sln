@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17959_Katarina_Stanojkovic_ZI", "17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI.csproj", "{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forma", "Forma\Forma.csproj", "{DC5AE343-2909-40E6-9016-3E00B7952A64}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2} = {0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF0CE0C-6BD5-4A53-9639-58384FCBC9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5AE343-2909-40E6-9016-3E00B7952A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5AE343-2909-40E6-9016-3E00B7952A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5AE343-2909-40E6-9016-3E00B7952A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5AE343-2909-40E6-9016-3E00B7952A64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D499CE26-6A72-4D39-8077-A91D27B658ED}
+	EndGlobalSection
+EndGlobal

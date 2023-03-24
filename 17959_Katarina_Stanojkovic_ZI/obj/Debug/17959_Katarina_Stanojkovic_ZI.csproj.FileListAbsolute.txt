@@ -1,0 +1,7 @@
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\bin\17959_Katarina_Stanojkovic_ZI.dll.config
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\bin\17959_Katarina_Stanojkovic_ZI.dll
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\bin\17959_Katarina_Stanojkovic_ZI.pdb
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\obj\Debug\17959_Katarina_Stanojkovic_ZI.csproj.CoreCompileInputs.cache
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\obj\Debug\17959_Katarina_Stanojkovic_ZI.dll
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\obj\Debug\17959_Katarina_Stanojkovic_ZI.pdb
+C:\Users\Kaca\Desktop\17959_Katarina_Stanojkovic_ZI\17959_Katarina_Stanojkovic_ZI\obj\Debug\17959_Katarina_Stanojkovic_ZI.csproj.AssemblyReference.cache
